@@ -1,0 +1,138 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-overflow-scrolling: touch; }
+
+img,
+video,
+audio {
+  max-width: 100%; }
+
+img,
+video {
+  height: auto; }
+
+svg {
+  max-height: 100%; }
+
+iframe {
+  border: none; }
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input[type="radio"],
+input[type="checkbox"] {
+  vertical-align: middle;
+  position: relative;
+  bottom: 0.15rem;
+  font-size: 115%;
+  margin-right: 3px; }
+
+input[type="search"] {
+  -webkit-appearance: textfield; }
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+body {
+  background: white;
+  font-size: 16px;
+  font-family: 'Oswald', sans-serif; }
+
+.legant {
+  background: url(/img/banner.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 1000px;
+  position: relative; }
+  .legant__top {
+    width: 100%; }
+  .legant__container {
+    width: 1024px;
+    margin: 0 auto; }
+  .legant__row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px; }
+  .legant__logo {
+    opacity: 0; }
+  .legant__menu {
+    flex: none; }
+    .legant__menu__list {
+      float: left;
+      margin-left: 10px;
+      margin-right: 10px; }
+      .legant__menu__list a {
+        display: block;
+        padding: 20px 20px;
+        color: white;
+        text-transform: uppercase;
+        font-size: 14px; }
+  .legant__lg-center {
+    width: 385px;
+    height: 100%;
+    background: url(/img/logo.png);
+    background-repeat: no-repeat;
+    background-position: center 90px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center; }
+  .legant__agency {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 90px; }
+  .legant__top-scroll {
+    text-align: center;
+    color: white; }
+    .legant__top-scroll i {
+      border: 2px solid;
+      border-radius: 50%;
+      padding: 10px 13px; }
+
+.fixed-scroll {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  box-shadow: 1px 1px 5px rgba(8, 8, 8, 0.39);
+  color: blue !important; }
+
+.logo-scroll {
+  opacity: 1;
+  animation: frames .5s ease-out 0s 1; }
+
+.color-scroll {
+  color: #33c3f0 !important; }
+
+@keyframes frames {
+  from {
+    width: 0; }
+  to {
+    width: 200px; } }
