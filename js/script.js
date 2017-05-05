@@ -6,13 +6,13 @@ var num = 100; //number of pixels before modifying styles
 
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() > num) {
-        $('.legant__top').addClass('fixed-scroll');
-        $('.legant__logo').addClass('logo-scroll');
-        $('.legant__menu__list a').addClass('color-scroll');
+        $('.legant_top').addClass('fixed-scroll');
+        $('.legant_brand').addClass('brand-scroll');
+        $('.legant_menu_list a').addClass('color-scroll');
     } else {
-        $('.legant__top').removeClass('fixed-scroll');
-        $('.legant__logo').removeClass('logo-scroll');
-        $('.legant__menu__list a').removeClass('color-scroll');
+        $('.legant_top').removeClass('fixed-scroll');
+        $('.legant_brand').removeClass('brand-scroll');
+        $('.legant_menu_list a').removeClass('color-scroll');
 
     }
 });

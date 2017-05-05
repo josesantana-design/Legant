@@ -75,12 +75,12 @@ body {
   width: 100%;
   height: 100vh;
   position: relative; }
-  .legant__top {
+  .legant_top {
     width: 100%;
     z-index: 2; }
-  .legant__container {
+  .legant_container {
     margin: 0 auto; }
-  .legant__row {
+  .legant_row {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -88,26 +88,26 @@ body {
     justify-content: space-between;
     padding-left: 15px;
     padding-right: 15px; }
-  .legant__brand {
+  .legant_brand {
     opacity: 0; }
-  .legant__menu {
+  .legant_menu {
     flex: none;
     z-index: 2;
     height: 63px; }
-    .legant__menu__list {
+    .legant_menu_list {
       float: left;
       margin-left: 10px;
       margin-right: 10px; }
-      .legant__menu__list a {
+      .legant_menu_list a {
         display: block;
         padding: 20px 20px;
         color: white;
         text-transform: uppercase;
         font-size: 14px;
         transition: all .2s; }
-        .legant__menu__list a:hover {
+        .legant_menu_list a:hover {
           border-bottom: 4px solid #33c3f0; }
-  .legant__brand-center {
+  .legant_brand-center {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -116,16 +116,16 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column; }
-    .legant__brand-center img {
+    .legant_brand-center img {
       width: 390px;
       height: 250px;
       margin-bottom: 20px; }
-  .legant__top-scroll {
+  .legant_top-scroll {
     text-align: center;
     color: white;
     position: absolute;
     bottom: 30px; }
-    .legant__top-scroll i {
+    .legant_top-scroll i {
       border: 2px solid;
       border-radius: 50%;
       padding: 10px 13px; }
@@ -133,9 +133,9 @@ body {
 .make {
   background-color: #33c3f0;
   padding: 50px 0; }
-  .make__container {
+  .make_container {
     margin: 0 auto; }
-  .make__row {
+  .make_row {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -143,24 +143,24 @@ body {
     justify-content: space-between;
     padding-left: 15px;
     padding-right: 15px; }
-  .make__title {
+  .make_title {
     font-size: 36px;
     text-transform: uppercase;
     color: #333;
     text-align: center;
     margin-bottom: 20px;
     font-weight: 600; }
-  .make__description {
+  .make_description {
     font-size: 18px;
     color: white;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     width: 50%;
     margin: 0 auto 50px; }
-  .make__development {
+  .make_development {
     width: 33%;
     font-family: 'Open Sans', sans-serif; }
-    .make__development__ico--lines:before {
+    .make_development_ico--lines:before {
       content: '';
       width: 410px;
       height: 3px;
@@ -168,7 +168,7 @@ body {
       position: absolute;
       top: 50%;
       right: 0; }
-    .make__development__ico--lines:after {
+    .make_development_ico--lines:after {
       content: '';
       width: 410px;
       height: 3px;
@@ -176,23 +176,23 @@ body {
       position: absolute;
       top: 50%;
       left: 0; }
-    .make__development__ico {
+    .make_development_ico {
       display: block;
       width: 100px;
       margin: 0 auto 20px;
       position: relative; }
-    .make__development__title {
+    .make_development_title {
       font-size: 18px;
       font-weight: 600px;
       text-transform: uppercase;
       text-align: center;
       margin-bottom: 20px;
       color: #333; }
-    .make__development__description {
+    .make_development__description {
       font-size: 14px;
       text-align: center;
       color: white; }
-  .make__button {
+  .make_button {
     color: white;
     border: 2px solid white;
     padding: 15px 30px;
@@ -201,9 +201,51 @@ body {
     display: block;
     max-width: 230px;
     margin: 50px auto 0; }
-    .make__button:hover {
+    .make_button:hover {
       background-color: white;
       color: #33c3f0; }
+
+.parallax {
+  background-image: url("/img/banner-parallax.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 645px; }
+  .parallax_container {
+    margin: 0 auto; }
+  .parallax_row {
+    padding-right: 15px;
+    padding-left: 15px;
+    height: 645px;
+    display: flex;
+    justify-content: center; }
+  .parallax_title {
+    font-size: 48px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-self: center; }
+    .parallax_title span {
+      color: #33c3f0; }
+    .parallax_title:before {
+      content: '';
+      width: 5px;
+      height: 120px;
+      position: absolute;
+      background-color: white;
+      top: 10px;
+      left: 0; }
+    .parallax_title:after {
+      content: '';
+      width: 5px;
+      height: 120px;
+      position: absolute;
+      background-color: white;
+      top: 10px;
+      right: 0; }
 
 .fixed-scroll {
   position: fixed;
@@ -211,7 +253,7 @@ body {
   background-color: white;
   box-shadow: 1px 1px 5px rgba(8, 8, 8, 0.1); }
 
-.logo-scroll {
+.brand-scroll {
   opacity: 1;
   animation: frames .5s ease-out 0s 1; }
 

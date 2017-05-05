@@ -17,17 +17,17 @@ body {
 	width: 100%;
 	height: 100vh;
 	position: relative;
-	&__top {
+	&_top {
 		width: 100%;
 		z-index: 2;
 	}
 
-	&__container {
+	&_container {
 		// width: $md;
 		margin: 0 auto;
 	}
 
-	&__row {
+	&_row {
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: row;
@@ -37,15 +37,15 @@ body {
 		padding-right: 15px;  
 	}
 
-	&__brand {
+	&_brand {
 		opacity: 0;
 	}
 	
-	&__menu {
+	&_menu {
 		flex: none;
 		z-index: 2;
 		height: 63px;
-		&__list {
+		&_list {
 			float: left;
     		margin-left: 10px;
     		margin-right: 10px;
@@ -63,7 +63,7 @@ body {
 		}
 	}
 
-	&__brand-center {
+	&_brand-center {
 	    width: 100%;
 	    height: 100%;
 		position: absolute;
@@ -80,7 +80,7 @@ body {
 	}
 	
 
-	&__top-scroll {
+	&_top-scroll {
 		text-align: center;
 		color: white;
 		position: absolute;
@@ -100,11 +100,11 @@ body {
 	background-color: $color-one;
 	padding: 50px 0;
 
-	&__container {
+	&_container {
 		margin: 0 auto;
 	}
 
-	&__row {
+	&_row {
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: row;
@@ -114,17 +114,17 @@ body {
 		padding-right: 15px; 		
 	}
 
-		&__title {
-		font-size: 36px;
-		text-transform: uppercase;
-		color: $color-headings;
-		text-align: center;
-		margin-bottom: 20px;
-		font-weight: 600;
+		&_title {
+			font-size: 36px;
+			text-transform: uppercase;
+			color: $color-headings;
+			text-align: center;
+			margin-bottom: 20px;
+			font-weight: 600;
 	}
 	
 
-	&__description {
+	&_description {
 		font-size: 18px;
 		color: white;
 		text-align: center;
@@ -134,11 +134,11 @@ body {
 	}
 	
 
-	&__development {
+	&_development {
 		width: 33%;
 		font-family: 'Open Sans', sans-serif;
 
-		&__ico--lines {
+		&_ico--lines {
 
 			&:before {
 			    content: '';
@@ -161,14 +161,14 @@ body {
 			}
 		}
 
-		&__ico {
+		&_ico {
 		    display: block;
 		    width: 100px;
 		    margin: 0 auto 20px;
 		    position: relative;
 		}
 
-		&__title {
+		&_title {
 			font-size: 18px;
 			font-weight: 600px;
 			text-transform: uppercase;
@@ -185,7 +185,7 @@ body {
 
 	}
 
-	&__button {
+	&_button {
 		color: white;
 		border: 2px solid white;
 		padding: 15px 30px;
@@ -198,6 +198,60 @@ body {
     		background-color: white;
     		color: $color-one;
     	}
+	}
+
+}
+
+.parallax {
+	background-image: url('/img/banner-parallax.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 645px;
+
+	&_container {
+		margin: 0 auto; 
+	}
+
+	&_row {
+		padding-right: 15px;
+		padding-left: 15px;
+		height: 645px;
+		display: flex;
+		justify-content: center;
+	}
+
+	&_title {
+		font-size: 48px;
+		font-weight: 400;
+		color: white;
+		text-align: center;
+		position: relative;
+		padding-left: 10px;
+		padding-right: 10px;
+		align-self: center;
+		span {
+			color: $color-one;
+		}
+		&:before {
+			content: '';
+		    width: 5px;
+		    height: 120px;
+		    position: absolute;
+		    background-color: white;
+		    top: 10px;
+		    left: 0;
+		}
+
+		&:after {
+			content: '';
+		    width: 5px;
+		    height: 120px;
+		    position: absolute;
+		    background-color: white;
+		    top: 10px;
+		    right: 0;
+		}
 	}
 
 }
