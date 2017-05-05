@@ -1,0 +1,26 @@
+.fixed-scroll {
+	position: fixed;
+	top: 0;
+	background-color: white;
+	box-shadow: 1px 1px 5px rgba(8, 8, 8, 0.1);
+}
+
+.logo-scroll {
+	opacity: 1;
+	animation: frames .5s ease-out 0s 1;
+}
+
+.color-scroll {
+	color: $color-one !important;
+}
+
+// Animacion logo
+
+@keyframes frames {
+  from {
+    width: 0;
+  }
+  to {
+  	width: 200px;
+  }
+}

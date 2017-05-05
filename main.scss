@@ -1,6 +1,7 @@
 @import "_scss/components";
 @import "_scss/variables";
 
+
 body {
 	background: white;
 	font-size: $font-size;
@@ -15,7 +16,6 @@ body {
 	background-size: cover;
 	width: 100%;
 	height: 100vh;
-	margin-bottom: 1000px;
 	position: relative;
 	&__top {
 		width: 100%;
@@ -23,7 +23,7 @@ body {
 	}
 
 	&__container {
-		width: $md;
+		// width: $md;
 		margin: 0 auto;
 	}
 
@@ -37,7 +37,7 @@ body {
 		padding-right: 15px;  
 	}
 
-	&__logo {
+	&__brand {
 		opacity: 0;
 	}
 	
@@ -63,7 +63,7 @@ body {
 		}
 	}
 
-	&__lg-center {
+	&__brand-center {
 	    width: 100%;
 	    height: 100%;
 		position: absolute;
@@ -93,29 +93,114 @@ body {
 	}
 }
 
-.fixed-scroll {
-	position: fixed;
-	top: 0;
-	background-color: white;
-	box-shadow: 1px 1px 5px rgba(8, 8, 8, 0.1);
+
+// Secion Lo que hacemos
+
+.make {
+	background-color: $color-one;
+	padding: 50px 0;
+
+	&__container {
+		margin: 0 auto;
+	}
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		padding-left: 15px;
+		padding-right: 15px; 		
+	}
+
+		&__title {
+		font-size: 36px;
+		text-transform: uppercase;
+		color: $color-headings;
+		text-align: center;
+		margin-bottom: 20px;
+		font-weight: 600;
+	}
+	
+
+	&__description {
+		font-size: 18px;
+		color: white;
+		text-align: center;
+		font-family: 'Open Sans', sans-serif;
+		width: 50%;
+		margin: 0 auto 50px; 
+	}
+	
+
+	&__development {
+		width: 33%;
+		font-family: 'Open Sans', sans-serif;
+
+		&__ico--lines {
+
+			&:before {
+			    content: '';
+			    width: 410px;
+			    height: 3px;
+			    background-color: white;
+			    position: absolute;
+			    top: 50%;
+			    right: 0;
+			}
+
+			&:after {
+			    content: '';
+			    width: 410px;
+			    height: 3px;
+			    background-color: white;
+			    position: absolute;
+			    top: 50%;
+			    left: 0;
+			}
+		}
+
+		&__ico {
+		    display: block;
+		    width: 100px;
+		    margin: 0 auto 20px;
+		    position: relative;
+		}
+
+		&__title {
+			font-size: 18px;
+			font-weight: 600px;
+			text-transform: uppercase;
+			text-align: center;
+			margin-bottom: 20px;
+			color: $color-headings;
+		}
+
+		&__description {
+			font-size: 14px;
+			text-align: center;
+			color: white;
+		}
+
+	}
+
+	&__button {
+		color: white;
+		border: 2px solid white;
+		padding: 15px 30px;
+		border-radius: 4px;
+		text-transform: uppercase;
+		display: block;
+    	max-width: 230px;
+    	margin: 50px auto 0;
+    	&:hover {
+    		background-color: white;
+    		color: $color-one;
+    	}
+	}
+
 }
 
-.logo-scroll {
-	opacity: 1;
-	animation: frames .5s ease-out 0s 1;
-}
 
-.color-scroll {
-	color: $color-one !important;
-}
-
-// Animacion logo
-
-@keyframes frames {
-  from {
-    width: 0;
-  }
-  to {
-  	width: 200px;
-  }
-}
+@import "_scss/utilities";
