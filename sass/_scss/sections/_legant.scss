@@ -1,0 +1,79 @@
+// Seccion Principal
+
+.legant {
+	background: url(../img/banner.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	
+	&_top {
+		width: 100%;
+		z-index: 2;
+	}
+
+	&_row {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		padding-left: 15px;
+		padding-right: 15px;  
+	}
+
+	&_brand {
+		opacity: 0;
+	}
+	
+	&_menu {
+		flex: none;
+		z-index: 2;
+		height: 63px;
+		&_list {
+			float: left;
+    		margin-left: 10px;
+    		margin-right: 10px;
+    		a {
+    			display: block;
+    			padding: 20px 20px;
+    			color: white;
+    			text-transform: uppercase;
+    			font-size: 14px;
+    			transition: all .2s;
+    			&:hover {
+    				border-bottom: 4px solid $color-one;
+    			}
+    		}
+		}
+	}
+
+	&_brand-center {
+	    width: 100%;
+	    height: 100%;
+		position: absolute;
+		top: 0;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    flex-direction: column;
+	    img {
+	    	width: 390px;
+	    	height: 250px;
+	    	margin-bottom: 20px;
+	    }
+	}
+	
+
+	&_top-scroll {
+		text-align: center;
+		color: white;
+		position: absolute;
+		bottom: 30px;
+		i {
+			border: 2px solid;
+    		border-radius: 50%;
+    		padding: 10px 13px;
+		}
+	}
+}

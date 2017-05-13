@@ -1,0 +1,22 @@
+@import "_scss/components";
+@import "_scss/variables";
+
+
+
+body {
+	background: white;
+	font-size: $font-size;
+	font-family: 'Oswald', sans-serif;
+}
+
+.container {
+	margin: 0 auto;
+}
+
+
+@import "_scss/sections/legant";
+@import "_scss/sections/make";
+@import "_scss/sections/parallax";
+@import "_scss/sections/team";
+
+@import "_scss/utilities";
