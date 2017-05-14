@@ -12,6 +12,10 @@
 
 	<?php include_once('views/team.view.php') ?>
 
+	<?php include_once('views/completed.view.php') ?>
+
+	<?php include_once('views/portfolio.view.php') ?>
+	
 	<?php include_once('include/footer.php') ?>
 	
 </body>

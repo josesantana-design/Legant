@@ -16,3 +16,14 @@ $(window).bind('scroll', function () {
 
     }
 });
+
+$(".portfolio_categories li").click(function () {
+    $(".portfolio_categories li").removeClass("etkin").filter(this).addClass("etkin");
+    var filter_id = $(this).data("filter");
+    $('.portfolio_thumbnails').isotope({
+        filter: filter_id,
+        animationOptions: {
+            duration: 1000
+        }
+    })
+});

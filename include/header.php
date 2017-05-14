@@ -11,4 +11,16 @@
 
 	<!-- My Styles -->
 	<link rel="stylesheet" href="css/main.css">
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	
+	<script>
+	    jQuery(document).ready(function( $ ) {
+	        $('.counter').counterUp({
+	            delay: 10,
+	            time: 5000
+	        });
+	    });
+	</script>
 </head>
