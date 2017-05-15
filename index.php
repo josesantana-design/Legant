@@ -3,18 +3,19 @@
 
 <?php include_once('include/header.php') ?>
 
-<body>
-	<?php include_once('views/legant.view.php') ?>
+<body id="App">
 
-	<?php include_once('views/make.view.php') ?>
+	<?php include_once('views/legant.php') ?>
 
-	<?php include_once('views/parallax.view.php') ?>
+	<?php include_once('views/make.php') ?>
 
-	<?php include_once('views/team.view.php') ?>
+	<?php include_once('views/parallax.php') ?>
 
-	<?php include_once('views/completed.view.php') ?>
+	<?php include_once('views/team.php') ?>
 
-	<?php include_once('views/portfolio.view.php') ?>
+	<?php include_once('views/completed.php') ?>
+
+	<?php include_once('views/portfolio.php') ?>
 	
 	<?php include_once('include/footer.php') ?>
 	

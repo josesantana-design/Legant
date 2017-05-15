@@ -4,6 +4,8 @@
 
 <script src="js/jquery.counterup.js"></script>
 
+<script src="js/App.vue.js"></script>
+
 <!-- My Scripts -->
 
 <script src="js/scripts.js"></script>

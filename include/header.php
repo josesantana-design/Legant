@@ -14,6 +14,8 @@
 
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.20/vue.min.js"></script>
 	
 	<script>
 	    jQuery(document).ready(function( $ ) {
