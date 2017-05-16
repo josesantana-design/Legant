@@ -75,27 +75,27 @@ new Vue({
 		portfolios: [
 			{ 
 				filter: 'web', 
-				image: 'member.jpg'
+				image: 'portfolio-1.jpg'
 			},		
 			{ 
 				filter: 'diseño', 
-				image: 'member.jpg'
+				image: 'portfolio-2.jpg'
 			},		
 			{ 
 				filter: 'iconos', 
-				image: 'member.jpg'
+				image: 'portfolio-3.jpg'
 			},		
 			{ 
 				filter: 'web', 
-				image: 'member.jpg'
+				image: 'portfolio-1.jpg'
 			},
 			{ 
 				filter: 'diseño', 
-				image: 'member.jpg'
+				image: 'portfolio-3.jpg'
 			},		
 			{ 
 				filter: 'iconos', 
-				image: 'member.jpg'
+				image: 'portfolio-2.jpg'
 			}
 		]
 	}

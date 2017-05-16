@@ -27,15 +27,18 @@
         li {
             width: 80px;
             height: 35px;
-            border: 1px solid white;
-            color: white;
+            color: $color-two;
             cursor: pointer;
             font-size: 0.8rem;
             line-height: 35px;
             text-transform: uppercase;
             margin-right: 20px;
             margin-bottom: 100px;
-            background: $color-two;
+            border:1px solid  $color-two;
+            &:hover {
+                background-color: $color-two;
+                color: white;
+            }
         }
     }
 

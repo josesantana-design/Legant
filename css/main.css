@@ -366,15 +366,17 @@ body {
     .portfolio_categories li {
       width: 80px;
       height: 35px;
-      border: 1px solid white;
-      color: white;
+      color: #0b43b8;
       cursor: pointer;
       font-size: 0.8rem;
       line-height: 35px;
       text-transform: uppercase;
       margin-right: 20px;
       margin-bottom: 100px;
-      background: #0b43b8; }
+      border: 1px solid #0b43b8; }
+      .portfolio_categories li:hover {
+        background-color: #0b43b8;
+        color: white; }
   .portfolio_thumbnails {
     display: flex;
     flex-wrap: wrap; }
